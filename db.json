@@ -1,0 +1,20 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "FAMILIA"
+        },
+        {
+            "id": 2,
+            "name": "COMIDA"
+        },
+        {
+            "id": 3,
+            "name": "ENTRETENIMIENTO"
+        },
+        {
+            "id": 4,
+            "name": "OTROS"
+        }
+    ]
+}
