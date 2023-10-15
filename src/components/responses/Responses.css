@@ -1,0 +1,30 @@
+.responses-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.response {
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.response-yes {
+    background-color: rgb(55, 243, 55);
+}
+
+.response-no {
+    background-color: rgb(243, 61, 61);
+}
+
+.response-icon {
+    font-size: 40px;
+}

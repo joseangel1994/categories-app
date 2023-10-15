@@ -1,22 +1,27 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { useState } from 'react'
 import './App.css'
 
 import { MdFoodBank, MdFamilyRestroom } from 'react-icons/md'
 import { FaRegSmileBeam } from 'react-icons/fa'
-import { PiPlusCircleBold, PiArrowCircleLeftBold } from 'react-icons/pi'
+import { PiPlusCircleBold } from 'react-icons/pi'
 
 import data from './cards'
+import Navigation from './components/navigation/Navigation'
+import Responses from './components/responses/Responses'
 
 
 function App() {
   const [category, setCategory] = useState('')
   const [cards, setCards] = useState([])
+  const [card, setCard] = useState(null)
 
   const handleCategorySelected = (categorySelected) => {
     setCategory(categorySelected)
     setCards(data.filter(card => card.category.includes(categorySelected)))
+  }
+
+  const handleCardSelected = (cardSelected) => {
+    setCard(cardSelected)
   }
 
   const handleNavigateBack = () => {
@@ -25,14 +30,11 @@ function App() {
 
   return (
     <>
-      {category !== '' &&
-        <div className='navigation'>
-          <PiArrowCircleLeftBold className='category-icon' onClick={handleNavigateBack} />
-        </div>
-      }
       {category === '' && (
         <>
-          <h1 className='title'>Categorias</h1>
+          <h1 className='title'>Categorías</h1>
+          <Responses />
+
           <div className="categories-container">
             <div className="category" onClick={() => handleCategorySelected('FAMILIA')}>
               <MdFamilyRestroom className='category-icon' />
@@ -54,14 +56,17 @@ function App() {
         </>
       )}
       {category !== '' && (
-        <div className='card-container'>
-          {cards.map(card => (
-            <div key={card.name} className="card">
-              <img src={card.picture} alt={card.name} />
-              <h4>{card.name}</h4>
-            </div>
-          ))}
-        </div>
+        <>
+          <Navigation category={category} onNavigateBack={handleNavigateBack} />
+          <div className='card-container'>
+            {cards.map(_card => (
+              <div key={_card.name} className={`card ${card && _card.name.includes(card.name) ? 'selected' : ''}`} onClick={() => handleCardSelected(_card)}>
+                <img src={_card.picture} alt={_card.name} />
+                <h4>{_card.name}</h4>
+              </div>
+            ))}
+          </div>
+        </>
       )}
     </>
   )
