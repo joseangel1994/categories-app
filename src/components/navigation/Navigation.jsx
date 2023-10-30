@@ -5,7 +5,7 @@ const Navigation = ({category, onNavigateBack}) => {
     return (
         <div className='navigation' onClick={onNavigateBack}>
           <PiArrowCircleLeftBold className='category-icon' />
-          <h2>{category}</h2>
+          <h2>Volver al inicio</h2>
         </div>
     )
 }

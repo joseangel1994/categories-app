@@ -5,69 +5,51 @@ import { MdFoodBank, MdFamilyRestroom } from 'react-icons/md'
 import { FaRegSmileBeam } from 'react-icons/fa'
 import { PiPlusCircleBold } from 'react-icons/pi'
 
-import data from './cards'
+import data3 from './cards'
 import Navigation from './components/navigation/Navigation'
 import Responses from './components/responses/Responses'
 
 
 function App() {
-  const [category, setCategory] = useState('')
-  const [cards, setCards] = useState([])
+  const [isMainPage, setIsMainPage] = useState(true)
+  const [cards, setCards] = useState(data3.filter(_card => _card.parentCategory === 'HABITACIONES'))
   const [card, setCard] = useState(null)
 
-  const handleCategorySelected = (categorySelected) => {
-    setCategory(categorySelected)
-    setCards(data.filter(card => card.category.includes(categorySelected)))
-  }
-
   const handleCardSelected = (cardSelected) => {
-    setCard(cardSelected)
+    const filteredCards = data3.filter(_card => _card.parentCategory.includes(cardSelected.name))
+    if (filteredCards.length > 0) {
+      setCards(filteredCards)
+    } else {
+      setCard(cardSelected)
+    }
+
+    setIsMainPage(false)
+
   }
 
   const handleNavigateBack = () => {
-    setCategory('')
+    setCards(data3.filter(_card => _card.parentCategory === 'HABITACIONES'))
+    setCard(null)
+    setIsMainPage(true)
   }
 
   return (
     <>
-      {category === '' && (
-        <>
-          <h1 className='title'>Categorías</h1>
-          <Responses />
+      <h1 className='title'>Categorías</h1>
+      {isMainPage ? (
+        <Responses />
+        ) : (
+        <Navigation onNavigateBack={handleNavigateBack} />
+      )}
 
-          <div className="categories-container">
-            <div className="category" onClick={() => handleCategorySelected('FAMILIA')}>
-              <MdFamilyRestroom className='category-icon' />
-              <h3>FAMILIA</h3>
-            </div>
-            <div className="category" onClick={() => handleCategorySelected('COMIDA')}>
-              <MdFoodBank className='category-icon' />
-              <h3>COMIDA</h3>
-            </div>
-            <div className="category" onClick={() => handleCategorySelected('ENTRETENIMIENTO')}>
-              <FaRegSmileBeam className='category-icon' />
-              <h3>ENTRETENIMIENTO</h3>
-            </div>
-            <div className="category" onClick={() => handleCategorySelected('OTROS')}>
-              <PiPlusCircleBold className='category-icon' />
-              <h3>OTROS</h3>
-            </div>
+      <div className='card-container'>
+        {cards.map(_card => (
+          <div key={_card.name} className={`card ${card && _card.name.includes(card.name) ? 'selected' : ''}`} onClick={() => handleCardSelected(_card)}>
+            <img src={_card.picture} alt={_card.name} />
+            <h4>{_card.name}</h4>
           </div>
-        </>
-      )}
-      {category !== '' && (
-        <>
-          <Navigation category={category} onNavigateBack={handleNavigateBack} />
-          <div className='card-container'>
-            {cards.map(_card => (
-              <div key={_card.name} className={`card ${card && _card.name.includes(card.name) ? 'selected' : ''}`} onClick={() => handleCardSelected(_card)}>
-                <img src={_card.picture} alt={_card.name} />
-                <h4>{_card.name}</h4>
-              </div>
-            ))}
-          </div>
-        </>
-      )}
+        ))}
+      </div>
     </>
   )
 }
