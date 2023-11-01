@@ -124,6 +124,86 @@ const data3 = [
            parentCategory: 'BAÑO',
            name: 'CORTAR UÑAS',
            picture: 'cutFingernails.png'
+       },
+       {
+           parentCategory: 'SALÓN',
+           name: 'TELEVISIÓN',
+           picture: 'TV.png'
+       },
+       {
+           parentCategory: 'SALÓN',
+           name: 'RADIO',
+           picture: 'radio.png'
+       },
+       {
+           parentCategory: 'SALÓN',
+           name: 'ENCENDER LUZ',
+           picture: 'lamp.png'
+       },
+       {
+           parentCategory: 'SALÓN',
+           name: 'MANTITA',
+           picture: 'blanket.png'
+       },
+       {
+           parentCategory: 'DORMITORIO',
+           name: 'CAMA',
+           picture: 'bed.png'
+       },
+       {
+           parentCategory: 'DORMITORIO',
+           name: 'CARGADOR',
+           picture: 'charger1.png'
+       },
+       {
+           parentCategory: 'DORMITORIO',
+           name: 'RELOJ',
+           picture: 'watch.png'
+       },
+       {
+           parentCategory: 'DORMITORIO',
+           name: 'SOMBRERO',
+           picture: 'hat.png'
+       },
+       {
+           parentCategory: 'DORMITORIO',
+           name: 'PIJAMA',
+           picture: 'pyjama.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'DESAYUNO',
+           picture: 'breakfast.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'PASEO',
+           picture: 'walk1.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'SIESTA',
+           picture: 'nap.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'VISITA',
+           picture: 'visit.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'LLAMADAS',
+           picture: 'phone.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'MÉDICO',
+           picture: 'doctor.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'PINTURA',
+           picture: 'paint.jpg'
        }
 
 ]
