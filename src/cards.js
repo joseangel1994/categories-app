@@ -21,8 +21,8 @@ const data3 = [
         parentCategory: 'HABITACIONES'
     },
     {
-        name: 'COMIDA',
-        picture: 'comida.png',
+        name: 'FRUTA',
+        picture: 'fruit.png',
         parentCategory: 'COCINA'
     },
     {
