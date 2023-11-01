@@ -21,23 +21,38 @@ const data3 = [
         parentCategory: 'HABITACIONES'
     },
     {
+        name: 'MI DÍA',
+        picture: 'myDay.png',
+        parentCategory: 'HABITACIONES'
+    },
+   {
+       parentCategory: 'COCINA',
+       name: 'BEBIDA',
+       picture: 'drinks.png'
+   },
+   {
+      parentCategory: 'COCINA',
+      name: 'COMIDA',
+      picture: 'food.png'
+  },
+    {
         name: 'FRUTA',
         picture: 'fruit.png',
-        parentCategory: 'COCINA'
+        parentCategory: 'COMIDA'
     },
     {
-        name: 'BEBIDA',
-        picture: 'bebidda.png',
-        parentCategory: 'COCINA'
-    },
-    {
-        name: 'Agua',
-        picture: 'agua.png',
+        name: 'AGUA',
+        picture: 'water.png',
         parentCategory: 'BEBIDA'
     },
     {
-        name: 'FRUTA',
-        picture: 'fruta.png',
+        name: 'PASTILLAS',
+        picture: 'pills.png',
+        parentCategory: 'COCINA'
+    },
+    {
+        name: 'PAN',
+        picture: 'bread.png',
         parentCategory: 'COMIDA'
     },
     {
@@ -59,7 +74,58 @@ const data3 = [
         parentCategory: 'FRUTA',
         name: 'Naranja',
         picture: 'naranja.png'
-    }
+    },
+     {
+         parentCategory: 'BEBIDA',
+         name: 'ACTIMEL',
+         picture: 'actimel.png'
+     },
+       {
+           parentCategory: 'BEBIDA',
+           name: 'CAFÉ',
+           picture: 'coffee.png'
+       },
+       {
+           parentCategory: 'BEBIDA',
+           name: 'INFUSIÓN',
+           picture: 'tea.png'
+       },
+       {
+           parentCategory: 'BEBIDA',
+           name: 'CERVEZA',
+           picture: 'beer.png'
+       },
+       {
+           parentCategory: 'BAÑO',
+           name: 'VÁTER',
+           picture: 'toilet.png'
+       },
+       {
+           parentCategory: 'BAÑO',
+           name: 'DUCHA',
+           picture: 'shower1.png'
+       },
+       {
+           parentCategory: 'BAÑO',
+           name: 'LAVABO',
+           picture: 'sink.png'
+       },
+       {
+           parentCategory: 'BAÑO',
+           name: 'AFEITAR',
+           picture: 'shaver.png'
+       },
+       {
+           parentCategory: 'BAÑO',
+           name: 'CEPILLO DE DIENTES',
+           picture: 'toothBrush.png'
+       },
+       {
+           parentCategory: 'BAÑO',
+           name: 'CORTAR UÑAS',
+           picture: 'cutFingernails.png'
+       }
+
 ]
 
 
