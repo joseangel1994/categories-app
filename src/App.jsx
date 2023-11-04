@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <h1 className='title'>Categorías</h1>
+{/*       <h1 className='title'>Categorías</h1> */}
       {isMainPage ? (
         <Responses />
         ) : (

@@ -21,6 +21,11 @@ const data3 = [
         parentCategory: 'HABITACIONES'
     },
     {
+        name: 'CÓMO ME SIENTO',
+        picture: 'feelings.png',
+        parentCategory: 'HABITACIONES'
+    },
+    {
         name: 'MI DÍA',
         picture: 'myDay.png',
         parentCategory: 'HABITACIONES'
@@ -126,25 +131,45 @@ const data3 = [
            picture: 'cutFingernails.png'
        },
        {
+          parentCategory: 'VÁTER',
+          name: 'PIPÍ',
+          picture: 'orinar.png'
+      },
+      {
+         parentCategory: 'VÁTER',
+         name: 'CACA',
+         picture: 'caca.png'
+     },
+       {
            parentCategory: 'SALÓN',
            name: 'TELEVISIÓN',
            picture: 'TV.png'
        },
+       {
+             parentCategory: 'SALÓN',
+             name: 'MANDO DE LA TELE',
+             picture: 'remoteControl.png'
+         },
        {
            parentCategory: 'SALÓN',
            name: 'RADIO',
            picture: 'radio.png'
        },
        {
+          parentCategory: 'SALÓN',
+          name: 'MANTITA',
+          picture: 'blanket.png'
+      },
+       {
            parentCategory: 'SALÓN',
-           name: 'ENCENDER LUZ',
+           name: 'LÁMPARA',
            picture: 'lamp.png'
        },
        {
-           parentCategory: 'SALÓN',
-           name: 'MANTITA',
-           picture: 'blanket.png'
-       },
+          parentCategory: 'SALÓN',
+          name: 'PERSIANA',
+          picture: 'persiana.png'
+      },
        {
            parentCategory: 'DORMITORIO',
            name: 'CAMA',
@@ -203,7 +228,102 @@ const data3 = [
        {
            parentCategory: 'MI DÍA',
            name: 'PINTURA',
-           picture: 'paint.jpg'
+           picture: 'pintura1.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'SUDOKU',
+           picture: 'sudoku.png'
+       },
+       {
+           parentCategory: 'MI DÍA',
+           name: 'LEER',
+           picture: 'leer.png'
+       },
+       {
+           parentCategory: 'CÓMO ME SIENTO',
+           name: 'ÁNIMO',
+           picture: 'animo.png'
+       },
+       {
+           parentCategory: 'CÓMO ME SIENTO',
+           name: 'CUERPO',
+           picture: 'cuerpo.png'
+       },
+       {
+           parentCategory: 'ÁNIMO',
+           name: 'FELIZ',
+           picture: 'happy.png'
+       },
+      {
+          parentCategory: 'ÁNIMO',
+          name: 'QUERIDO',
+          picture: 'loved.png'
+      },
+      {
+          parentCategory: 'ÁNIMO',
+          name: 'TRISTE',
+          picture: 'sad.png'
+      },
+      {
+          parentCategory: 'ÁNIMO',
+          name: 'CANSADO',
+          picture: 'tired.png'
+      },
+      {
+          parentCategory: 'ÁNIMO',
+          name: 'ENFADADO',
+          picture: 'angry.png'
+      },
+      {
+          parentCategory: 'ÁNIMO',
+          name: 'CONFUNDIDO',
+          picture: 'confused.png'
+      },
+      {
+          parentCategory: 'ÁNIMO',
+          name: 'DESANIMADO',
+          picture: 'desanimado.png'
+      },
+      {
+          parentCategory: 'CUERPO',
+          name: 'ESTOY BIEN',
+          picture: 'bien.png'
+      },
+      {
+          parentCategory: 'CUERPO',
+          name: 'ME DUELE LA CABEZA',
+          picture: 'cabeza.png'
+      },
+      {
+          parentCategory: 'CUERPO',
+          name: 'ME DUELE EL ESTÓMAGO',
+          picture: 'estomago.png'
+      },
+     {
+         parentCategory: 'CUERPO',
+         name: 'ME DUELE LA GARGANTA',
+         picture: 'garganta.png'
+     },
+     {
+         parentCategory: 'CUERPO',
+         name: 'ME DUELE EL BRAZO',
+         picture: 'brazo.png'
+     },
+     {
+         parentCategory: 'CUERPO',
+         name: 'ME DUELE LA PIERNA',
+         picture: 'pierna.png'
+     },
+       {
+           parentCategory: 'CUERPO',
+           name: 'ME DUELE LA ESPALDA',
+           picture: 'espalda.png'
+       },
+       {
+           parentCategory: 'CUERPO',
+           name: 'ME DUELE EL PECHO',
+           picture: 'pecho.png'
        }
 
 ]
